@@ -61,9 +61,9 @@ main > section#container > h1 {
     padding: 7px;
 }
 
-main > section#container > p.categoria {
+/*main > section#container > p.categoria {
     transform: translate(-48%, -767%);
-}
+}*/
 
 main > section#container > p {
     font-family: var(--fonte2);
