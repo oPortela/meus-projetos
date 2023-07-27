@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    section#container > div#imagem {
+        background: black url(../images/image-product-desktop.jpg);
+        background-position: center center;
+        background-size: cover;
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    section#container {
+        float: right;
+        width: 50%;
+        height: 500px;
+        width: 600px;
+    }
+
+    main > section#container > p.categoria {
+        position: relative;
+        margin: 8px;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-49%, -740%);
+    }
+
+    main > section#container > h1 {
+        font-size: 2.35em;
+        transform: translate(3%, -4%);
+    }
+
+    main > section#container > p {
+        position: relative;
+        letter-spacing: none;
+        font-size: 1em;
+        margin: 30px;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-52%, -300%);
+    }
+
+    main > section#container > div.grupo > p.valor-original {
+        top: 40%;
+        left: 210%;
+    
+        transform: translate(260%, -473%);
+    }
+
+    main > section#container > div.grupo > p.valor {
+        position: relative;
+
+        top: 50%;
+        left: 170%;
+
+        transform: translate(-5%, -57%);
+    }
+
+    main > section#container > button {
+        position: relative;
+    
+        font-size: 0.9em;
+        display: block;
+        margin: auto;
+        background-color: var(--cor1);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        height: 50px;
+        width: 250px;
+        text-align: center;
+        cursor: pointer;
+        top: 43%;
+        left: 21%;
+    
+        transform: translate(-50%, -300%);
+    }
+}

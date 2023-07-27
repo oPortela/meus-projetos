@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte1: 'Fraunces', serif;
+    --fonte2: 'Montserrat', sans-serif;
+
+    --cor0: #F3EBE5;
+    --cor1: #3C8067;
+    --cor2: #214538;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor0);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: white;
+    height: 600px;
+    width: 320px;
+    border-radius: 15px;
+
+    transform: translate(-50%, -50%);
+}
+
+section#container > div#imagem {
+    display: block;
+    background: black url(../images/image-product-mobile.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+main > section#container > h1 {
+    font-family: var(--fonte1);
+    font-weight: bolder;
+    font-size: 1.8em;
+    margin: 7px;
+    padding: 7px;
+}
+
+main > section#container > p.categoria {
+    transform: translate(-48%, -767%);
+}
+
+main > section#container > p {
+    font-family: var(--fonte2);
+    font-size: 0.9em;
+    font-weight: 350;
+    margin: 7px;
+    padding: 7px;
+}
+
+main > section#container > div.grupo {
+    position: absolute;
+}*
+
+main > section#container > div.grupo > p.valor-original {
+    opacity: 0.5;
+    font-size: 0.8em;
+
+    display: inline-block;
+    position: relative;
+
+    top: 40%;
+    left: 40%;
+
+    transform: translate(260%, -300%);
+}
+
+main > section#container > div.grupo > p.valor {
+    font-family: var(--fonte1);
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 7px;
+    margin-left: 30px;
+    padding: 7px;
+    color: var(--cor1);
+}
+
+main > section#container > button {
+    position: relative;
+
+    font-size: 0.9em;
+    display: block;
+    margin: auto;
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    top: 14%;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+}
