@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0: hsl(31, 77%, 52%);
+    --cor1: hsl(184, 100%, 22%);
+    --cor2: hsl(179, 100%, 13%);
+
+    --fonte1: 'Lexend Deca';
+    --fonte2: 'Big Shoulders Display';
+}
+
+body, html {
+    font-size: 15px;
+}
+
+h1 {
+    font-family: var(--fonte1);
+    color: white;
+    padding: 20px;
+}
+
+p {
+    font-family: var(--fonte2);
+    color: white;
+    padding: 20px;
+}
+
+main > div.caixa > img {
+    position: relative;
+    height: 28px;
+    width: 44px;
+    display: block;
+
+    top: 11%;
+    left: 21%;
+    
+    transform: translate(-73%, -50%);
+}
+
+main > div.caixa {
+    height: 310px;
+    width: 250px;
+    margin: auto;
+}
+
+main > div#sedans {
+    background-color: var(--cor0);
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main > div#suvs {
+    background-color: var(--cor1);
+}
+
+main > div#luxury {
+    background-color: var(--cor2);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main a.botao {
+    position: relative;
+    
+    display: block;
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 0.8em;
+    width: 40%;
+    height: 35px;
+    padding-top: 7px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+
+    top: 8%;
+    left: 11%;
+}
+
+main > div#sedans a.botao {
+    color: var(--cor0);
+}
+
+main > div#suvs a.botao {
+    color: var(--cor1);
+}
+
+main > div#luxury a.botao {
+    color: var(--cor2);
+}
