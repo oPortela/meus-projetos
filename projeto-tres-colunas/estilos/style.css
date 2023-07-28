@@ -24,15 +24,20 @@ body, html {
 }
 
 h1 {
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
+    text-transform: uppercase;
     color: white;
     padding: 20px;
+
+    transform: translate(2px, 14px);
 }
 
 p {
-    font-family: var(--fonte2);
+    font-family: var(--fonte1);
+    font-weight: lighter;
     color: white;
     padding: 20px;
+    font-size: 0.9em;
 }
 
 main > div.caixa > img {
