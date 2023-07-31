@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    /*body {
+        background: url(../images/pattern-background-desktop.svg) center center no-repeat;
+        background-size: cover;
+    }*/
+
+    main > section#container {
+        height: 650px;
+        width: 420px;
+        transform: translate(-50%, -50%);
+    }
+
+    section#container > div#imagem {
+        height: 200px;
+    }
+
+    h1 {
+        margin: 30px;
+    }
+    
+    p#descricao {
+        margin: 37px;
+    }
+
+    section#container > div.plano {
+        height: 80px;
+        width: 369px;
+        margin-bottom: 30px;
+    }
+
+    section#container > div.plano > div#valor {
+        transform: translate(-18%, -116%);
+    }
+
+    section#container > button {
+        margin-bottom: 30px;
+        width: 359px;
+        height: 50px;
+    }
+}

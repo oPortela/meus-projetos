@@ -21,6 +21,8 @@
 
 body, html {
     background-color: var(--cor0);
+    /*background: url(../images/pattern-background-mobile.svg) center center no-repeat;
+    background-size: cover;*/
     width: 100vw;
     height: 100vh;
 }
