@@ -93,9 +93,10 @@ section#container > div.plano > div#valor > p#custo {
 section#container > div.plano > a {
     display: block;
     font-weight: bold;
+    font-size: 0.8em;
     color: var(--cor1);
 
-    transform: translate(75%, -380%);
+    transform: translate(77%, -457%);
 }
 
 section#container > button {
