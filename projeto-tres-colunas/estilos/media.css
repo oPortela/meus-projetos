@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 759px) {
+    main {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    main > div.caixa {
+        float: left;
+        margin: 0 auto;
+        transform: translate(0%, 0%);
+    }
+
+    main > div#sedans {
+        margin-top: 0px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    main > div#luxury {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    main > div.caixa {
+        position: relative;
+        height: 400px;
+        width: 250px;
+
+        top: 50%;
+        left: 18%;
+
+        transform: translate(-50%, 50%);
+    }
+
+    h1 {
+        transform: translate(10px, 40px);
+    }
+
+    p {
+        margin: 15px 10px -33px -4px;
+        padding: 32px;
+    }
+
+    main > div.caixa > img {
+        top: 12%;
+        left: 25%;
+        font-weight: 200;
+    }
+
+    main a.botao {
+        top: 20%;
+        left: 12%;
+
+        width: 43%;
+        height: 37px;
+    }
+}
