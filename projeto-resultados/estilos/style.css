@@ -131,6 +131,8 @@ article {
 }
 
 section > article#reaction {
+    display: flex;
+    padding-left: 10px;
     background-color: var(--cor4);
     color: var(--cor0);
     border-radius: 10px;
@@ -138,6 +140,7 @@ section > article#reaction {
 }
 
 section > article#memory {
+    display: flex;
     background-color: var(--cor5);
     color: var(--cor1);
     border-radius: 10px;
@@ -145,6 +148,7 @@ section > article#memory {
 }
 
 section > article#verbal {
+    display: flex;
     background-color: var(--cor6);
     color: var(--cor2);
     border-radius: 10px;
@@ -152,6 +156,7 @@ section > article#verbal {
 }
 
 section > article#visual {
+    display: flex;
     background-color: var(--cor7);
     color: var(--cor3);
     border-radius: 10px;
@@ -160,6 +165,12 @@ section > article#visual {
 
 div.notas {
     display: inline-block;
+    padding-left: 10px;
+}
+
+div.notas-categoria {
+    display: flex;
+    padding-left: 90px;
     color: var(--gradient3);
 }
 
