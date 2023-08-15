@@ -44,13 +44,13 @@ main {
     width: 100vw;
 }
 
-section > p {
+section > div#container2 > p {
     margin-left: 20px;
     padding-top: 20px;
     font-weight: bolder;
 }
 
-section > div#container {
+div#container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -63,7 +63,7 @@ section > div#container {
     position: relative;
 }
 
-section > div#container > div#resume {
+div#container > div#resume {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -121,7 +121,7 @@ main > section {
     transform: translate(-50%, -50%);
 }
 
-section > article, section > button {
+section > div#container2 > article, section > div#container2 > button {
     margin: 20px;
     padding: 10px;
 }
@@ -130,7 +130,7 @@ article {
     font-weight: bolder;
 }
 
-section > article#reaction {
+section > div#container2 > article#reaction {
     display: flex;
     padding-left: 10px;
     background-color: var(--cor4);
@@ -139,7 +139,7 @@ section > article#reaction {
     height: 40px;
 }
 
-section > article#memory {
+section > div#container2 > article#memory {
     display: flex;
     background-color: var(--cor5);
     color: var(--cor1);
@@ -147,7 +147,7 @@ section > article#memory {
     height: 40px;
 }
 
-section > article#verbal {
+section > div#container2 > article#verbal {
     display: flex;
     background-color: var(--cor6);
     color: var(--cor2);
@@ -155,7 +155,7 @@ section > article#verbal {
     height: 40px;
 }
 
-section > article#visual {
+section > div#container2 > article#visual {
     display: flex;
     background-color: var(--cor7);
     color: var(--cor3);
@@ -163,18 +163,29 @@ section > article#visual {
     height: 40px;
 }
 
-div.notas {
+div#container2 > div.notas {
     display: inline-block;
     padding-left: 10px;
 }
 
 div.notas-categoria {
     display: flex;
-    padding-left: 90px;
+    padding-left: 105px;
     color: var(--gradient3);
 }
 
-section > button {
+div.notas-categoria-2 {
+    display: flex;
+    padding-left: 120px;
+    color: var(--gradient3);
+}
+
+span {
+    opacity: 0.5;
+    padding-left: 5px;
+}
+
+section > div#container2 > button {
     display: block;
     background-color: var(--gradient3);
     color: var(--neutral0);
