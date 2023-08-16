@@ -44,7 +44,7 @@ main {
     width: 100vw;
 }
 
-section > div#container2 > p {
+section > div#container2 p {
     margin-left: 20px;
     padding-top: 20px;
     font-weight: bolder;
