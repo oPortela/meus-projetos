@@ -1,3 +1,10 @@
+<stytle>
+  body {
+    background-color:blue;
+  }  
+</stytle>
+
+
 # meus-projetos
 projetos para aprendizado
 
