@@ -50,6 +50,19 @@ section > div#container2 p {
     font-weight: bolder;
 }
 
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: white;
+    height: 750px;
+    width: 320px;
+    border-radius: 25px;
+
+    transform: translate(-50%, -50%);
+}
+
 div#container {
     display: flex;
     flex-direction: column;
@@ -108,18 +121,6 @@ section > div#container > p {
     opacity: 0.7;
 }
 
-main > section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    background-color: white;
-    height: 550px;
-    width: 320px;
-    border-radius: 15px;
-
-    transform: translate(-50%, -50%);
-}
 
 section > div#container2 > article, section > div#container2 > button {
     margin: 20px;

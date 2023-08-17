@@ -1,20 +1,22 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 765px) {
-    section {
+    main > section {
         top: 53%;
-        left: 32.5%;
+        left: 50%;
 
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0; 
-        height: 100vh; 
+        height: 435px;
+        width: 660px;
 
         transform: translate(-50%, -50%);
     }
 
     div#container {
+        height: 435px;
         border-radius: 25px;
         text-align: center;
         padding: 20px;
@@ -24,5 +26,13 @@
     div#container2 {
         padding: 20px;
         box-sizing: border-box;
+    }
+
+    section > div#container2 > button {
+        margin-top: 50px;
+    }
+
+    span {
+        
     }
 }
