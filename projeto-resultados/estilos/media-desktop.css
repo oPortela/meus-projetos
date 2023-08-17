@@ -32,7 +32,24 @@
         margin-top: 50px;
     }
 
-    span {
-        
+    section > div#container2 > article {
+        margin: 13px;
+        margin-bottom: 20px;
+    }
+
+    section > div#container2 > article#reaction {
+        height: 45px;
+    }
+    
+    section > div#container2 > article#memory {
+        height: 45px;
+    }
+    
+    section > div#container2 > article#verbal {
+        height: 45px;
+    }
+    
+    section > div#container2 > article#visual {
+        height: 45px;
     }
 }
