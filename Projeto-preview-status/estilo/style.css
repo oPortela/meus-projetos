@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor0: hsl(233, 47%, 7%);
+    --cor1: hsl(244, 38%, 16%); 
+    --cor2: hsl(277, 64%, 61%);
+    --cor3: hsl(0, 0%, 100%);
+    --cor4: hsla(0, 0%, 100%, 0.75);
+    --cor5: hsla(0, 0%, 100%, 0.6);
+
+    --font0: 'Lexend Deca', sans-serif;
+    --font1: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--cor3);
+}
+
+body, html {
+    background-color: var(--cor0);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: var(--cor1);
+    height: 750px;
+    width: 350px;
+    border-radius: 0px 0px 15px 15px;
+
+    transform: translate(-50%, -50%);
+}
+
+section#container > div#caixa > div#imagem {
+    display: block;
+    background-image: linear-gradient(hsla(277, 93%, 39%, 0.54), hsla(277, 86%, 31%, 0.54)), url(../images/image-header-mobile.jpg);
+    color: var(--cor2);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+section#container > div#caixa > p#insights {
+    text-align: center;
+    font-family: var(--font0);
+    margin: 10px;
+    padding: 10px;
+}
+
+section#container > div#caixa > p#texto {
+    font-family: var(--font1);
+}
+
+section#container > div#caixa > p > strong {
+    color: var(--cor2);
+}
