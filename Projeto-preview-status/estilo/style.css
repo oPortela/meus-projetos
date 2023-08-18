@@ -61,14 +61,45 @@ section#container > div#caixa > div#imagem {
 section#container > div#caixa > p#insights {
     text-align: center;
     font-family: var(--font0);
-    margin: 10px;
-    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 9px;
+    padding: 20px 35px 0px 35px;
 }
 
 section#container > div#caixa > p#texto {
     font-family: var(--font1);
+    font-weight: normal;
+    font-size: 0.8em;
+    text-align: center;
+    opacity: 0.7;
+    line-height: 1.6em;
+    margin: 9px;
+    padding: 10px 55px 0px 55px;
 }
 
 section#container > div#caixa > p > strong {
     color: var(--cor2);
+}
+
+div#valores {
+    text-align: center;
+}
+
+div#valores > div.dados {
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 1.5em;
+    /*text-transform: uppercase;*/
+    margin-top: 30px;
+}
+
+div#valores > div.names {
+    font-family: var(--font0);
+    font-size: 0.6em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin: 5px;
 }
