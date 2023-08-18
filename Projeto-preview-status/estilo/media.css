@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 536px) {
+    section#container > div#caixa > div#imagem {
+        background-image: linear-gradient(hsla(277, 93%, 39%, 0.54), hsla(277, 86%, 31%, 0.54)), url(../images/image-header-desktop.jpg);
+        background-position: center center;
+        background-size: cover;
+        float: right;
+        margin-top: -9px;
+        height: 300px;
+        width: 350px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    section#container {
+        float: left;
+        width: 50%;
+        height: 300px;
+        width: 700px;
+
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    section#container > div#caixa > p#insights {
+        text-align: left;
+        padding: 20px 35px 0px 23px;
+    }
+
+    section#container > div#caixa > p#texto {
+        text-align: left;
+        padding: 10px 55px 0px 23px;
+    }
+
+    div#texto {
+        display: flex;
+    }
+
+    div#valores {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
