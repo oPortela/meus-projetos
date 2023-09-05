@@ -47,7 +47,7 @@ section#container {
 
 section#container > div#caixa > div#imagem {
     display: block;
-    background-image: linear-gradient(hsla(277, 93%, 39%, 0.54), hsla(277, 86%, 31%, 0.54)), url(../images/image-header-mobile.jpg);
+    background-image: linear-gradient(hsla(277, 93%, 39%, 0.54), hsla(277, 86%, 31%, 0.54)), url('../images/image-header-mobile.jpg');
     color: var(--cor2);
     background-position: center center;
     background-size: cover;

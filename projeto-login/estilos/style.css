@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --color0: #01400B;
+    --color1: #4ed96365;
+    --color2: #80f29159;
+    --color3: #F2F2F2;
+    --color4: #0D0D0D;
+
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(var(--color1), var(--color2)), url('../images/bg-intro-desktop.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.dados-pessoais {
+    background-color: var(--color3);
+    margin: auto;
+    width: 300px;
+    height: 400px;
+}
+
+.dados-pessoais > form > input {
+    margin: auto;
+    height: 40px;
+    
+}
