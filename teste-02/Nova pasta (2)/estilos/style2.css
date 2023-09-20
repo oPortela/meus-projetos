@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.03em;
+}
+
+main {
+    background: black url('../imagens/fundo2.jpg');
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#texto {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    height: 612px;
+    min-width: 480px;
+    max-width: 580px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+div#texto > a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(54, 58, 0);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+}
