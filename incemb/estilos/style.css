@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --color0: #01400B;
+    --color1: #4ed96365;
+    --color2: #80f29159;
+    --color3: #F2F2F2;
+    --color4: #0D0D0D;
+    --color5: #000000bd;
+    --color6: #7DF299;
+    --color7: #017400;
+
+    --font0: 'Sora', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imagens/fachada.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.692);
+    position: relative;
+    height: 100vh;  
+    width: 100vw;
+}
+
+
+section#login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: rgb(161, 182, 250);
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transform: translate(-50%, -50%);
+}
+
+section#login-container > a > img{
+    background-position: center center;
+}
+
+section#login-container > h2{
+    text-align: center;
+}
+
+input#input-user, input#input-password, input#sign-in {
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 130px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 12px;
+}
+
+div.container > form > a {
+    margin-left: 60px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+form > input.container-botao {
+    font-family: var(--font0);
+    background-image: linear-gradient(to right, var(--color0), var(--color6));
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 25px;
+    height: 45px;
+    width: 250px;
+}
+
+/* Este hover será somente um teste, depois terá de fazer alterações*/
+
+div.container > form > input.container-botao:hover {
+    background-image: linear-gradient(to left, var(--color0) 1%, var(--color7), var(--color3) 99%);
+}
+
+div.container > p.container-new {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+div.container > p.container-new > a {
+    text-decoration: none;
+}
+
+
+
+
+/*Media query e responsividade para outros dispositivos*/
