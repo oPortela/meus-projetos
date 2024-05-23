@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
-    --color0: #01400B;
-    --color1: #4ed96365;
+    --color0: #006885;
+    --color1: #A1B6FA;
     --color2: #80f29159;
     --color3: #F2F2F2;
-    --color4: #0D0D0D;
+    --color4: #c50000;
     --color5: #000000bd;
-    --color6: #7DF299;
-    --color7: #017400;
+    --color6: #81cce0;
+    --color7: #2BAACE;
 
     --font0: 'Sora', sans-serif;
 }
@@ -49,18 +49,34 @@ section#login-container {
     transform: translate(-50%, -50%);
 }
 
-section#login-container > a > img{
-    background-position: center center;
+section#login-container > a#logo{
+    position: relative;
+
+    top: 1%;
+    left: 25%;
+
+    transform: translate(-50%, -50%);
 }
 
 section#login-container > h2{
     text-align: center;
+    margin-top: 20px;
 }
 
-input#input-user, input#input-password, input#sign-in {
+input#usuario{
     height: 35px;
     width: 250px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 130px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+input#password, input#sign-in {
+    height: 35px;
+    width: 250px;
+    margin-top: 2px;
     margin-left: 130px;
     margin-bottom: 15px;
     padding-left: 5px;
@@ -71,29 +87,22 @@ label {
     font-size: 12px;
 }
 
-div.container > form > a {
-    margin-left: 60px;
-    font-size: 12px;
-    text-decoration: none;
-}
+form > button {
+    position: relative;
 
-form > input.container-botao {
     font-family: var(--font0);
     background-image: linear-gradient(to right, var(--color0), var(--color6));
     color: white;
     border: 1px solid rgba(0, 0, 0, 0.39);
     border-radius: 50px;
+    cursor: pointer;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 25px;
     height: 45px;
     width: 250px;
-}
 
-/* Este hover será somente um teste, depois terá de fazer alterações*/
-
-div.container > form > input.container-botao:hover {
-    background-image: linear-gradient(to left, var(--color0) 1%, var(--color7), var(--color3) 99%);
+    left: 21%;
 }
 
 div.container > p.container-new {
@@ -108,8 +117,3 @@ div.container > p.container-new {
 div.container > p.container-new > a {
     text-decoration: none;
 }
-
-
-
-
-/*Media query e responsividade para outros dispositivos*/
