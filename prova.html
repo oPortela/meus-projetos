@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Compras Inteligente</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .inputs input {
+      flex: 1 1 30%;
+      padding: 5px;
+    }
+
+    button {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .lista {
+      border: 1px solid gray;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .erro {
+      color: red;
+      font-weight: bold;
+    }
+
+    .item {
+      padding: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .total {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .inputs input {
+        flex: 1 1 100%;
+      }
+
+      body {
+        background-color: #eef;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🛒 Lista de Compras Inteligente</h2>
+
+  <div class="inputs">
+    <input type="text" id="nome" placeholder="Nome do produto">
+    <input type="text" id="quantidade" placeholder="Quantidade">
+    <input type="text" id="preco" placeholder="Preço (R$)">
+  </div>
+
+  <button id="adicionar">Adicionar Item</button>
+
+  <div id="mensagem"></div>
+
+  <div id="lista" class="lista">
+    <strong>Itens:</strong>
+  </div>
+
+  <div id="total" class="total">Total: R$ 0,00</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const nomeInput = document.getElementById('nome');
+    const quantidadeInput = document.getElementById('quantidade');
+    const precoInput = document.getElementById('preco');
+    const btnAdicionar = document.getElementById('adicionar');
+    const lista = document.getElementById('lista');
+    const totalDiv = document.getElementById('total');
+    const mensagem = document.getElementById('mensagem');
+
+    let totalCompra = 0;
+
+    // Função para adicionar item
+    function adicionarItem() {
+      const nome = nomeInput.value.trim();
+      const quantidade = parseInt(quantidadeInput.value.trim());
+      const preco = parseFloat(precoInput.value.trim());
+
+      mensagem.textContent = '';
+      mensagem.classList.remove('erro');
+
+      // Validação
+      if (nome === '' || isNaN(quantidade) || isNaN(preco) || quantidade <= 0 || preco <= 0) {
+        mensagem.textContent = 'Preencha todos os campos corretamente.';
+        mensagem.classList.add('erro');
+        return;
+      }
+
+      // Cria div do item
+      const itemDiv = document.createElement('div');
+      itemDiv.classList.add('item');
+
+      // Exibe com innerHTML (diferente de textContent)
+      itemDiv.innerHTML = `<strong>${nome}</strong> — ${quantidade} x R$ ${preco.toFixed(2)} = R$ ${(quantidade * preco).toFixed(2)}`;
+
+      lista.appendChild(itemDiv);
+
+      // Atualiza total
+      totalCompra += quantidade * preco;
+      totalDiv.textContent = `Total: R$ ${totalCompra.toFixed(2)}`;
+
+      // Limpa campos
+      nomeInput.value = '';
+      quantidadeInput.value = '';
+      precoInput.value = '';
+      nomeInput.focus();
+    }
+
+    // Adiciona eventos
+    btnAdicionar.addEventListener('click', adicionarItem);
+
+    // Enter em qualquer input adiciona item
+    const inputs = document.querySelectorAll('.inputs input');
+    inputs.forEach(input => {
+      input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          adicionarItem();
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
