@@ -4,6 +4,9 @@ let correctAnswers = 0;
 
 showQuestion();
 
+//Events
+document.querySelector('.scoreArea button').addEventListener('click', reset);
+
 //Functions
 function showQuestion() {
     if (questions[currentQuestion]) {
@@ -11,7 +14,7 @@ function showQuestion() {
 
         let pct = Math.floor((currentQuestion / questions.length) * 100);
 
-        document.querySelector('.progress--bar').style.width = `${pct + 10}%`;
+        document.querySelector('.progress--bar').style.width = `${pct}%`;
 
         document.querySelector('.scoreArea').style.display = 'none';
         document.querySelector('.questionArea').style.display = 'block';
@@ -31,8 +34,7 @@ function showQuestion() {
         })
 
     } else {
-        let pct = Math.floor((correctAnswers / questions.length) * 100);
-        finishQuiz(pct);
+        finishQuiz();
     }
 }
 
@@ -47,23 +49,33 @@ function optionClickEvent(e) {
     showQuestion();
 }
 
-function finishQuiz(pct) {
+function finishQuiz() {
+    let pontos = Math.floor((correctAnswers / questions.length) * 100);
+
+    if (pontos < 30) {
+        document.querySelector('.scoreText1').innerHTML = 'Estudar né campeão!';
+        document.querySelector('.scorePct').style.color = 'red';
+    } else if (pontos >= 30 && pontos< 70) {
+        document.querySelector('.scoreText1').innerHTML = 'Muito Bom!';
+        document.querySelector('.scorePct').style.color = 'yellow';
+    } else if (pontos >= 70) {
+        document.querySelector('.scoreText1').innerHTML = 'Parabéns!';
+        document.querySelector('.scorePct').style.color = '#0D630D';
+    }
+
     document.querySelector('.questionArea').style.display = 'none';
     document.querySelector('.scoreArea').style.display = 'block';
+    document.querySelector('.progress--bar').style.width = `100%`;
 
-    document.querySelector('.scorePct').innerHTML = `Acertou ${pct}%`;
+    document.querySelector('.scorePct').innerHTML = `Acertou ${pontos}%`;
     document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${correctAnswers}.`
 }
 
 function restart() {
     currentQuestion = 0;
     correctAnswers = 0;
-
     showQuestion();
-
-    document.querySelector('.scoreArea').style.display = 'none';
+    /*document.querySelector('.scoreArea').style.display = 'none';
     document.querySelector('.questionArea').style.display = 'block';
-
-    document.querySelector('.progress--bar').style.width = `10%`;
-    
+    document.querySelector('.progress--bar').style.width = `10%`;*/
 }
